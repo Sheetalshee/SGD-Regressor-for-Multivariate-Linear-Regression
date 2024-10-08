@@ -31,7 +31,6 @@ from sklearn.multioutput import MultiOutputRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 from sklearn.preprocessing import StandardScaler
-
 data=fetch_california_housing()
 df=pd.DataFrame(data.data,columns=data.feature_names)
 df['target']=data.target
@@ -81,12 +80,8 @@ mse = mean_squared_error(Y_test, Y_pred)
 print("Mean Squared Error:", mse)
 print("\nPredictions:\n", Y_pred[:5])
 ```
-
-
 ## Output:
 ![image](https://github.com/user-attachments/assets/cdace6f7-bb92-49ab-bf65-bdfc0786a8dc)
-
-
 
 ## Result:
 Thus the program to implement the multivariate linear regression model for predicting the price of the house and number of occupants in the house with SGD regressor is written and verified using python programming.
